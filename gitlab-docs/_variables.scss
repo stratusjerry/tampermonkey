@@ -1,0 +1,379 @@
+// Fonts
+$body-font-size: 16px;
+
+// Heights
+$header-height: 3rem;
+
+// Width
+$sidebar-width: 16.66667%;
+$sidebar-mobile-width: 20rem;
+$search-sm-width: 90vw;
+$search-lg-width: 25rem;
+$search-md-width: 18rem;
+
+// GitLab colors
+// Tanuki
+$color-tanuki-dark: rgb(226, 67, 41);
+$color-tanuki-medium: rgb(252, 109, 38);
+$color-tanuki-light: rgb(252, 163, 38);
+
+//// GitLab Design System's (GDS) colors ////
+// https://design.gitlab.com/#/foundations/colors
+
+// Neutral palette
+$gds-white: #fff;
+$gds-gray-50: #fafafa;
+$gds-gray-100: #f2f2f2;
+$gds-gray-200: #dfdfdf;
+$gds-gray-300: #ccc;
+$gds-gray-400: #bababa;
+$gds-gray-700: #707070;
+$gds-gray-800: #4f4f4f;
+$gds-gray-900: #2e2e2e;
+$gds-gray-950: #1f1f1f;
+$gds-black: #000;
+
+// Blue palette
+$gds-blue-600: #1b69b6;
+
+// Purple palette
+$gds-purple-900: #2f2a6b;
+
+// Indigo palette
+$gds-indigo-100: #dbdbf8;
+$gds-indigo-800: #393982;
+//// end of GitLab Design System's colors ////
+
+//// Colors conforming with GDS ////
+// Add here all the variables that already conform with GDS
+
+// Base colors
+$body-color: $gds-gray-950; //font color
+$bg-overlay-color: rgba(0, 0, 0, 0.3); // body overlay
+$header-background-color: $gds-purple-900;
+$header-free-trial-button-color: #cb4e18;
+
+// Link colors
+$link-color: $gds-blue-600;
+$link-color-bg-active: rgba($gds-gray-900, 0.06);
+$link-color-nav: $gds-gray-800;
+$link-color-nav-hover: $gds-gray-900;
+
+// Global nav
+$global-nav-link-level0: $link-color-nav;
+$global-nav-link-level1: $link-color-nav;
+$global-nav-link-level2: $link-color-nav;
+$global-nav-link-level3: $link-color-nav;
+$global-nav-link-level4: $link-color-nav;
+$global-nav-link-level5: $link-color-nav;
+$global-nav-link-level6: $link-color-nav;
+$global-nav-link-shadow: $gds-gray-200;
+
+// Table of contents
+$toc-link-color: $global-nav-link-level2;
+
+/// Elements
+$h1-border-bottom: $gds-gray-700;
+
+// Pajama alerts
+$alert-note-bg: #fafafa;
+$alert-note-txt: $gds-black;
+$alert-note-border: #dbdbdb;
+
+$alert-info-bg: #f1f1ff;
+$alert-info-txt: $gds-black;
+$alert-info-border: #dbdbf8;
+
+$alert-success-bg: #fafafa;
+$alert-success-txt: $gds-black;
+$alert-success-border: #dbdbdb;
+
+$alert-flag-bg: #ecf4ee;
+$alert-flag-txt: $gds-black;
+$alert-flag-border: #c3e6cd;
+
+$alert-disclaimer-bg: #e9f3fc;
+$alert-disclaimer-txt: $gds-black;
+$alert-disclaimer-border: #cbe2f9;
+
+$alert-warning-bg: #faf2f1;
+$alert-warning-txt: $gds-black;
+$alert-warning-border: #f6d9d5;
+
+$alert-danger-bg: #faf2f1;
+$alert-danger-txt: $gds-black;
+$alert-danger-border: #f6d9d5;
+
+$alert-gray-bg: $gds-gray-100;
+$alert-gray-txt: $gds-gray-900;
+$alert-gray-border: $gds-gray-200;
+
+//// end of colors conforming with GitLab Design System ////
+
+//Icons
+$gl-icon-sizes: 8 10 12 14 16 18 24 32 48 72;
+
+// Inline code colors
+$code-color: rgb(31, 31, 31);
+$code-background-color: rgb(240, 240, 240);
+$alert-code-background-color: rgb(242, 242, 242);
+$accessible-code-color: rgb(64, 64, 64);
+
+//copy button bg color == pre code color
+$pre-code-color: transparent;
+
+// Home page colors
+$landing-gl-purple-50: #c7c7f2;
+$landing-gl-purple-100: #e1d8f9;
+$landing-gl-purple-500: #7b58cf;
+$landing-gl-purple-550: #6e49cb;
+$landing-gl-purple-600: #694cc0;
+$landing-gl-purple-700: #5943b6;
+$landing-gl-indigo-950: #32304e;
+$landing-gl-gray-50: #fafafa;
+$landing-gl-white-500: #ebe5f7;
+$landing-gl-gray-500: #666;
+$landing-gl-gray-600: #5e5e5e;
+$landing-gl-black-0: rgba(255, 255, 255, 0);
+$landing-gl-black-50: rgba(0, 0, 0, 0.24);
+$landing-gl-black-100: rgba(255, 255, 255, 0.16);
+$landing-gl-blue-200: rgba(102, 102, 196, 0.24);
+$landing-gl-blue-600: #171537;
+$landing-gl-blue-950: rgba(36, 34, 66, 0.24);
+$landing-gl-blue-1000: rgba(36, 34, 66, 0.25);
+
+// Footer colors
+$footer-gray-400: #868686;
+$footer-gray-500: #666;
+
+// Help & feedback section colors
+$help-indigo-50: #f1f1ff;
+$help-indigo-500: #6666c4;
+$help-blue-500: #1068bf;
+$help-gray-100: #dbdbdb;
+$help-gray-200: #bfbfbf;
+$help-gray-900: #303030;
+
+// Social colors
+$youtube: #f00;
+
+
+// New Styles from: https://gitlab.com/gitlab-org/gitlab/-/issues/300424
+// The above styles will be slowly replaced
+
+// Breakpoints
+$bp-xs: 0 !default;
+$bp-sm: 544px !default;
+$bp-md: 768px !default;
+$bp-lg: 992px !default;
+$bp-xl: 1200px !default;
+
+// Colors
+$green-50: #ecf4ee !default;
+$green-100: #c3e6cd !default;
+$green-200: #91d4a8 !default;
+$green-300: #52b87a !default;
+$green-400: #2da160 !default;
+$green-500: #108548 !default;
+$green-600: #217645 !default;
+$green-700: #24663b !default;
+$green-800: #0d532a !default;
+$green-900: #0a4020 !default;
+$green-950: #072b15 !default;
+
+$blue-50: #e9f3fc !default;
+$blue-100: #cbe2f9 !default;
+$blue-200: #9dc7f1 !default;
+$blue-300: #63a6e9 !default;
+$blue-400: #428fdc !default;
+$blue-500: #1f75cb !default;
+$blue-600: #1068bf !default;
+$blue-700: #0b5cad !default;
+$blue-800: #064787 !default;
+$blue-900: #033464 !default;
+$blue-950: #002850 !default;
+
+$orange-50: #fdf1dd !default;
+$orange-100: #f5d9a8 !default;
+$orange-200: #e9be74 !default;
+$orange-300: #d99530 !default;
+$orange-400: #c17d10 !default;
+$orange-500: #ab6100 !default;
+$orange-600: #9e5400 !default;
+$orange-700: #8f4700 !default;
+$orange-800: #703800 !default;
+$orange-900: #5c2900 !default;
+$orange-950: #421f00 !default;
+
+$red-50: #fcf1ef !default;
+$red-100: #fdd4cd !default;
+$red-200: #fcb5aa !default;
+$red-300: #f57f6c !default;
+$red-400: #ec5941 !default;
+$red-500: #dd2b0e !default;
+$red-600: #c91c00 !default;
+$red-700: #ae1800 !default;
+$red-800: #8d1300 !default;
+$red-900: #660e00 !default;
+$red-950: #4d0a00 !default;
+
+$purple-50: #f4f0ff !default;
+$purple-100: #e1d8f9 !default;
+$purple-200: #cbbbf2 !default;
+$purple-300: #ac93e6 !default;
+$purple-400: #9475db !default;
+$purple-500: #7b58cf !default;
+$purple-600: #694cc0 !default;
+$purple-700: #5943b6 !default;
+$purple-800: #453894 !default;
+$purple-900: #2f2a6b !default;
+$purple-950: #232150 !default;
+
+$white: #fff !default;
+$gray-10: #fafafa !default;
+$gray-50: #f0f0f0 !default;
+$gray-100: #dbdbdb !default;
+$gray-200: #bfbfbf !default;
+$gray-300: #999 !default;
+$gray-400: #868686 !default;
+$gray-500: #666 !default;
+$gray-600: #5e5e5e !default;
+$gray-700: #525252 !default;
+$gray-800: #404040 !default;
+$gray-900: #303030 !default;
+$gray-950: #1f1f1f !default;
+
+// GitLab themes
+$theme-indigo-50: #f1f1ff !default;
+$theme-indigo-100: #dbdbf8 !default;
+$theme-indigo-200: #c7c7f2 !default;
+$theme-indigo-300: #a2a2e6 !default;
+$theme-indigo-400: #8181d7 !default;
+$theme-indigo-500: #6666c4 !default;
+$theme-indigo-600: #5252b5 !default;
+$theme-indigo-700: #41419f !default;
+$theme-indigo-800: #303083 !default;
+$theme-indigo-900: #222261 !default;
+$theme-indigo-950: #14143d !default;
+
+// Badges
+$badge-tier: $red-500;
+$badge-self-managed: $orange-500;
+$badge-saas: $orange-500;
+
+// Gl Markdown
+
+// Fonts
+$gl-monospace-font: 'GitLab Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas',
+  'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace;
+$gl-regular-font: 'GitLab Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans',
+  Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$gl-fonts: (
+  'monospace': $gl-monospace-font,
+  'regular': $gl-regular-font,
+);
+
+// Text
+$gl-font-weight-normal: 400;
+$gl-font-weight-bold: 600;
+
+$gl-font-weights: (
+  'normal': $gl-font-weight-normal,
+  'bold': $gl-font-weight-bold,
+);
+
+$gl-font-size-monospace: 0.813rem;
+$gl-font-size-monospace-lg: 0.938rem;
+$gl-font-size-monospace-sm: 0.688rem;
+
+// Misc mixins
+
+@mixin gl-text-gray-700 {
+  color: $gray-700;
+}
+
+@mixin gl-fluid-font-size($min, $max) {
+  @include gl-responsive-property('font-size', $min, $max);
+}
+
+@mixin gl-fluid-line-height($min, $max) {
+  @include gl-responsive-property('line-height', $min, $max);
+}
+
+@mixin gl-responsive-property(
+  $property,
+  $property-min,
+  $property-max,
+  $breakpoint-min: $breakpoint-md,
+  $breakpoint-max: $breakpoint-xl
+) {
+  $breakpoint-range: calc(($breakpoint-max - $breakpoint-min) / 1rem);
+  $property-range: calc(($property-max - $property-min) / 1rem);
+
+  @media (min-width: $breakpoint-min) {
+    #{$property}: calc(#{$property-min} + #{$property-range} * ((100vw - #{$breakpoint-min}) / #{$breakpoint-range}));
+  }
+
+  @media (min-width: $breakpoint-max) {
+    #{$property}: $property-max;
+  }
+}
+
+$gl-border-size-1: 0.063rem;
+
+// Responsive breakpoints
+$breakpoint-sm: 36rem;
+$breakpoint-md: 48rem;
+$breakpoint-lg: 62rem;
+$breakpoint-xl: 75rem;
+
+// Line height
+$gl-line-height-16: 1rem;
+$gl-line-height-20: 1.25rem;
+$gl-line-height-24: 1.5rem;
+$gl-line-height-28: 1.75rem;
+$gl-line-height-32: 2rem;
+$gl-line-height-36: 2.25rem;
+$gl-line-height-44: 2.75rem;
+$gl-line-height-52: 3.25rem;
+
+// Layout
+$grid-size: 0.5rem;
+$gl-spacing-scale-1: 0.25 * $grid-size;
+$gl-spacing-scale-2: 0.5 * $grid-size;
+$gl-spacing-scale-3: $grid-size;
+$gl-spacing-scale-4: 1.5 * $grid-size;
+$gl-spacing-scale-5: 2 * $grid-size;
+$gl-spacing-scale-6: 3 * $grid-size;
+$gl-spacing-scale-7: 4 * $grid-size;
+$gl-spacing-scale-8: 5 * $grid-size;
+$gl-spacing-scale-9: 6 * $grid-size;
+$gl-spacing-scale-10: 7 * $grid-size;
+$gl-spacing-scale-11: 8 * $grid-size;
+$gl-spacing-scale-11-5: 9 * $grid-size;
+$gl-spacing-scale-12: 10 * $grid-size;
+$gl-spacing-scale-13: 12 * $grid-size;
+$gl-spacing-scale-15: 15 * $grid-size;
+$gl-spacing-scale-20: 20 * $grid-size;
+
+// default (min-width: 0)
+$gl-font-size-markdown: 1rem;
+$gl-font-size-markdown-sm: 0.875rem;
+
+$gl-font-size-markdown-h1: 1.75rem;
+$gl-font-size-markdown-h2: 1.438rem;
+$gl-font-size-markdown-h3: 1.188rem;
+
+// breakpoint (min-width: 768px)
+$gl-font-size-markdown-h1-md: 1.938rem;
+$gl-font-size-markdown-h2-md: 1.563rem;
+$gl-font-size-markdown-h3-md: 1.25rem;
+
+// breakpoint (min-width: 1200px)
+$gl-font-size-markdown-h1-xl: 2.813rem;
+$gl-font-size-markdown-h2-xl: 2rem;
+$gl-font-size-markdown-h3-xl: 1.438rem;
+
+// Workaround for https://gitlab.com/gitlab-org/gitlab-ui/-/issues/2095
+$gl-icon-select-chevron-down: url('data:image/svg+xml,%3Csvg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M0.21967 0.21967C0.512563 -0.0732232 0.987437 -0.0732232 1.28033 0.21967L4 2.93934L6.71967 0.21967C7.01256 -0.073223 7.48744 -0.0732229 7.78033 0.21967C8.07322 0.512563 8.07322 0.987437 7.78033 1.28033L4.53033 4.53033C4.23744 4.82322 3.76256 4.82322 3.46967 4.53033L0.21967 1.28033C-0.0732233 0.987437 -0.0732233 0.512563 0.21967 0.21967Z" fill="%23666666"/%3E%3C/svg%3E%0A');
