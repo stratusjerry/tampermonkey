@@ -59,7 +59,6 @@ const allElements = document.querySelectorAll('*');
 
 allElements.forEach(element => {
   var backgroundColorLookup = getComputedStyle(element).backgroundColor;
-  //if (bgmap.has(backgroundColorLookup)) {console.log("Has element backgroundColorLookup")};
   //if (bgmap.has(backgroundColorLookup)) {console.log(bgmap.get(backgroundColorLookup))};
   if (bgmap.has(backgroundColorLookup)) {
     var foregroundColorLookup = getComputedStyle(element).color
@@ -68,25 +67,22 @@ allElements.forEach(element => {
     // Check if the .color is in bgmap values and replace with the key
     //console.log(foregroundColorLookup)
     if (fgmap.has(foregroundColorLookup)) {
-        //console.log("We should be trying to set this")
         //console.log(fgmap.get(foregroundColorLookup))
         element.style.color = fgmap.get(foregroundColorLookup)
     };
   };
 });
 
-// Some elements don't seem to getting set (probably backgroundColor wasn't changing)
+// Fix for some outliers
 allElements.forEach(element => {
+  // Some elements don't seem to getting set (probably backgroundColor wasn't changing)
   if (getComputedStyle(element).color === 'rgb(79, 79, 79)') {
     //console.log("got missing match");
     element.style.color = '#fafafa'
-  };  
-});
-
-// Fix for hard to see element on dark background
-allElements.forEach(element => {
+  };
+  // Fix for hard to see element on dark background
   if (getComputedStyle(element).color === 'rgb(34, 34, 97)') {
     //console.log("got dark match");
     element.style.color = '#2F2A6B'
-  };  
+  };
 });
