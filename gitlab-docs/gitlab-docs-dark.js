@@ -78,7 +78,7 @@ allElements.forEach(element => {
 // Some elements don't seem to getting set (probably backgroundColor wasn't changing)
 allElements.forEach(element => {
   if (getComputedStyle(element).color === 'rgb(79, 79, 79)') {
-    console.log("got match");
+    //console.log("got missing match");
     element.style.color = '#fafafa'
   };  
 });
@@ -86,7 +86,7 @@ allElements.forEach(element => {
 // Fix for hard to see element on dark background
 allElements.forEach(element => {
   if (getComputedStyle(element).color === 'rgb(34, 34, 97)') {
-    console.log("got match");
+    //console.log("got dark match");
     element.style.color = '#2F2A6B'
   };  
 });
